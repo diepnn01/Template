@@ -1,4 +1,3 @@
-
 platform :ios, '10.0'
 use_frameworks!
 
@@ -12,9 +11,9 @@ def common_pods
   pod 'netfox'
 end
 
-target 'MVVM-Training' do
+target 'Template' do
   common_pods
-  project 'MVVM-Training/MVVM-Training.xcodeproj'
+  project 'Template/Template.xcodeproj'
 end
 
 target 'CoreProject' do

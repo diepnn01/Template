@@ -1,6 +1,6 @@
 //
 //  DataBinding.swift
-//  MVVM-Training
+//  Template
 //
 //  Created by Diep Nguyen on 12/3/18.
 //  Copyright © 2018 Diep Nguyen. All rights reserved.

@@ -22,7 +22,6 @@
 		5FF1D81021B6353F006E7B9F /* CoreProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF1D80F21B6353F006E7B9F /* CoreProjectTests.swift */; };
 		5FF1D81221B6353F006E7B9F /* CoreProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FF1D80421B6353F006E7B9F /* CoreProject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5FF1D82F21B643FD006E7B9F /* DataBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF1D82B21B643FC006E7B9F /* DataBinding.swift */; };
-		5FF1D83021B643FD006E7B9F /* NumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF1D82E21B643FC006E7B9F /* NumberModel.swift */; };
 		9895B63DAFE1F0410E1A7549 /* Pods_CoreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 673D9709A3679603BC6FFAEC /* Pods_CoreProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		5FF1D80F21B6353F006E7B9F /* CoreProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreProjectTests.swift; sourceTree = "<group>"; };
 		5FF1D81121B6353F006E7B9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FF1D82B21B643FC006E7B9F /* DataBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBinding.swift; sourceTree = "<group>"; };
-		5FF1D82E21B643FC006E7B9F /* NumberModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberModel.swift; sourceTree = "<group>"; };
 		673D9709A3679603BC6FFAEC /* Pods_CoreProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FFB55AF2271F4ADBE771EA /* Pods-CoreProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreProject.release.xcconfig"; path = "Target Support Files/Pods-CoreProject/Pods-CoreProject.release.xcconfig"; sourceTree = "<group>"; };
 		F6288545D42D694582D442F0 /* Pods-CoreProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreProject.debug.xcconfig"; path = "Target Support Files/Pods-CoreProject/Pods-CoreProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,7 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				5F9CB72E21B67C75009FACCB /* Common */,
-				5FF1D82E21B643FC006E7B9F /* NumberModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,7 +341,6 @@
 				5F9CB73221B67CD9009FACCB /* CoreObject.swift in Sources */,
 				5F9CB73421B67D1E009FACCB /* RequestParameterObject.swift in Sources */,
 				5F9CB72B21B67919009FACCB /* AlamofireManager.swift in Sources */,
-				5FF1D83021B643FD006E7B9F /* NumberModel.swift in Sources */,
 				5F9CB73621B67F3A009FACCB /* ServerResponseStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

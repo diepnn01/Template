@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MVVM_TrainingVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MVVM_TrainingVersionString[];
+FOUNDATION_EXPORT double Pods_TemplateVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_TemplateVersionString[];
 
