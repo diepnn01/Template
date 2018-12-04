@@ -16,6 +16,7 @@
 		5F9CB75E21B68924009FACCB /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9CB75D21B68924009FACCB /* TemplateTests.swift */; };
 		5F9CB76921B6893B009FACCB /* CoreProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9CB76821B6893B009FACCB /* CoreProject.framework */; };
 		5F9CB76A21B6893B009FACCB /* CoreProject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5F9CB76821B6893B009FACCB /* CoreProject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5FC2215221B68E5B006C9FD8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC2215121B68E5B006C9FD8 /* BaseViewController.swift */; };
 		C8C91B646536E2AE03993C62 /* Pods_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B78BCDE00033B49A39001E /* Pods_Template.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		5F9CB75D21B68924009FACCB /* TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateTests.swift; sourceTree = "<group>"; };
 		5F9CB75F21B68924009FACCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F9CB76821B6893B009FACCB /* CoreProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC2215121B68E5B006C9FD8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		5F9CB76E21B68A27009FACCB /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				5FC2215021B68E2C006C9FD8 /* Base */,
 				5F9CB74721B68923009FACCB /* ViewController.swift */,
 				5F9CB74921B68923009FACCB /* Main.storyboard */,
 			);
@@ -155,6 +158,14 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		5FC2215021B68E2C006C9FD8 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5FC2215121B68E5B006C9FD8 /* BaseViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		9C2A2D23D45C8F089B7A6B23 /* Pods */ = {
@@ -329,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F9CB74E21B68923009FACCB /* Template.xcdatamodeld in Sources */,
+				5FC2215221B68E5B006C9FD8 /* BaseViewController.swift in Sources */,
 				5F9CB74821B68923009FACCB /* ViewController.swift in Sources */,
 				5F9CB74621B68923009FACCB /* AppDelegate.swift in Sources */,
 			);
