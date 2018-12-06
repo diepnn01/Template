@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.0)
+  - Kingfisher (4.10.1)
   - netfox (1.13.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8)
+  - Kingfisher (~> 4.10)
   - netfox
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Kingfisher
     - netfox
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   netfox: 44e626a4fe8bd1cde774346b03edb84a593077de
 
-PODFILE CHECKSUM: cfac7ab5872a63e4845057ccc538d63d9cc7fd9e
+PODFILE CHECKSUM: c8afe60d2f6050b4a32c606d78ac395765758401
 
 COCOAPODS: 1.6.0.beta.2

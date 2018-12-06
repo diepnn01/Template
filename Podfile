@@ -10,6 +10,7 @@ inhibit_all_warnings!
 def common_pods
   pod 'Alamofire', '~> 4.8'
   pod 'netfox'
+  pod 'Kingfisher', '~> 4.10'
 end
 
 target 'MVVM-Training' do
