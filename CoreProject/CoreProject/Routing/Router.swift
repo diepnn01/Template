@@ -32,13 +32,13 @@ public class Router {
     static var baseUrl: String {
         switch environment {
         case .development:
-            host = "http://carnivalbkk.crystal-techs.com"
+            host = "https://api.themoviedb.org/3"
         case .staging:
-            host = "https://stg-carnivalbkk.mgfdev.com"
+            host = "https://api.themoviedb.org/3"
         case .production:
-            host = "http://carnivalbkk.crystal-techs.com"
+            host = "https://api.themoviedb.org/3"
         }
-        return "\(host)/dev"
+        return host
     }
     
     public static func setHost(endpoint: String) {

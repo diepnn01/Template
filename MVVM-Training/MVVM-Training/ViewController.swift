@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import CoreProject
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        MovieService.shared.getMovies(type: .Popular).cloudResponse { (collection: MoviesCollection) in
+            print("ddd")
+            }.cloudError { (msg: String, _: Int?) in
+                //
+            }.finally {
+                //
+        }
     }
 
 

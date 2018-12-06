@@ -34,18 +34,18 @@ public final class Movie: CoreObject {
     var first_air_date  : String?
     
     public init(data: [AnyHashable : Any]?) {
-        id                  = data["id"] as? Int
-        vote_average        = data["vote_average"] as? Float
-        overview            = data["overview"] as? String
-        title               = data["title"] as? String
-        name                = data["name"] as? String
-        release_date        = data["release_date"] as? String
-        poster_path         = data["poster_path"] as? String
-        backdrop_path       = data["backdrop_path"] as? String
-        if let temp = data["genre_ids"] as? [Int] {
+        id                  = data?["id"] as? Int
+        vote_average        = data?["vote_average"] as? Float
+        overview            = data?["overview"] as? String
+        title               = data?["title"] as? String
+        name                = data?["name"] as? String
+        release_date        = data?["release_date"] as? String
+        poster_path         = data?["poster_path"] as? String
+        backdrop_path       = data?["backdrop_path"] as? String
+        if let temp = data?["genre_ids"] as? [Int] {
             genres = temp
         }
-        media_type          = data["media_type"] as? String
-        first_air_date      = data["first_air_date"] as? String
+        media_type          = data?["media_type"] as? String
+        first_air_date      = data?["first_air_date"] as? String
     }
 }

@@ -23,19 +23,19 @@ public final class ServiceRequest<T: CoreObject> {
     }
     
     @discardableResult
-    func cloudResponse(_ closure: ((T) -> Void)? = nil) -> Self {
+    public func cloudResponse(_ closure: ((T) -> Void)?) -> Self {
         self.cloudResponseClosure = closure
         return self
     }
     
     @discardableResult
-    func cloudError(_ closure: ((_ status: String, _ code: Int?) -> Void)? = nil) -> Self {
+    public func cloudError(_ closure: ((_ status: String, _ code: Int?) -> Void)?) -> Self {
         self.cloudErrorClosure = closure
         return self
     }
     
     @discardableResult
-    func finally(_ closure: (() -> Void)?) -> Self {
+    public func finally(_ closure: (() -> Void)?) -> Self {
         self.finallyClosure = closure
         return self
     }
