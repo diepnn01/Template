@@ -19,7 +19,8 @@ public final class MovieRouter: Router {
     
     func getTvShows(type: ListType) -> URLRequestConvertible {
         let path = buildValidFullPathForRequest(getEndPoint(type: type, screenType: .TvShow) + AppConstants.keyPath + AppConstants.apiKey)
-        return buildUrlRequest(Route(method: .get, path: path))
+        let params = ["api_key": "b42de0d7051793f886f6c0569505a420"]
+        return buildUrlRequest(Route(method: .get, path: path, queryParams: params))
     }
     
     private func getEndPoint(type: ListType, screenType: TypeScreen) -> String {

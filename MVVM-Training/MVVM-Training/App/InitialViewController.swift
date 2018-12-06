@@ -9,7 +9,7 @@
 import UIKit
 import CoreProject
 
-class ViewController: UIViewController {
+final class InitialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         }
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if let vc = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "TabbarViewController") as? TabbarViewController {
+            UIApplication.shared.delegate?.window!!.rootViewController = vc
+        }
+    }
 
 }
 
