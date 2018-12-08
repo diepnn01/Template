@@ -10,10 +10,11 @@ import Foundation
 
 public final class MoviesCollection: ServerResponseObject {
     
-    var page = 1
-    var total_results: Int = 0
-    var total_pages: Int = 0
-    var objectList = [Movie]()
+    public var page = 1
+    public var total_results: Int = 0
+    public var total_pages: Int = 0
+    public var objectList = [Movie]()
+    public var itemType: ListType?
     
     public required init(data: [AnyHashable : Any]?) {
         super.init(data: data)

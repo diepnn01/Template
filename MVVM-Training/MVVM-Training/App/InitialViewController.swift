@@ -13,13 +13,6 @@ final class InitialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        MovieService.shared.getMovies(type: .Popular).cloudResponse { (collection: MoviesCollection) in
-            print("ddd")
-            }.cloudError { (msg: String, _: Int?) in
-                //
-            }.finally {
-                //
-        }
     }
 
     override func viewDidAppear(_ animated: Bool) {

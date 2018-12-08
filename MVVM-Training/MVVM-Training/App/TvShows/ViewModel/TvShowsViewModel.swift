@@ -7,7 +7,14 @@
 //
 
 import UIKit
+import CoreProject
 
 final class TvShowsViewModel {
 
+    
+    
+    func getTvShow() {
+        
+//        MovieService.shared.getTvShows(type: .Popular).cloudError(<#T##closure: ((String, Int?) -> Void)?##((String, Int?) -> Void)?##(String, Int?) -> Void#>)
+    }
 }

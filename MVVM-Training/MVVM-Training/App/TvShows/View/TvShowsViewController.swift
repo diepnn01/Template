@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreProject
 
 final class TvShowsViewController: BaseViewController {
 
