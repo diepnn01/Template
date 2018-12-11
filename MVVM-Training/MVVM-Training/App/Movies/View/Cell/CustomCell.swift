@@ -36,6 +36,8 @@ class CustomCell: UITableViewCell {
     
     private func setCollection() {
         itemsCollection?.registerNib(ItemsCollectionViewCell.className)
+        itemsCollection.delegate = self
+        itemsCollection.dataSource = self
         let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection  = .horizontal
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
@@ -54,12 +56,8 @@ extension CustomCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemsCollectionViewCell.className, for: indexPath) as! ItemsCollectionViewCell
         let row = arrayItems?[indexPath.row]
-        cell.itemTitle.text = row?.title //row?.title == "" ? row?.name : row?.title
-        cell.itemImage.isHidden = true
-//        ImageLoader.getImagen(name: row!.poster_path, round: false, width: 300, height: 400, completion: { (image) in
-//            cell.itemImage.image = image
-//            cell.itemImage.isHidden = false
-//        })
+        cell.itemTitle.text = row?.title == "" ? row?.name : row?.title
+        ImageLoader.loadImage(imageView: cell.itemImage, linkUrl: row!.poster_path!)
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
         }

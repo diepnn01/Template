@@ -9,9 +9,10 @@
 import Foundation
 import Kingfisher
 
-final class ImageLoader {
+public final class ImageLoader {
     
-    static func loadImage(imageView: UIImageView, linkUrl: String) {
-        imageView.kf.setImage(with: URL(string: linkUrl), placeholder: nil, options: [], progressBlock: nil, completionHandler: nil)
+    public static func loadImage(imageView: UIImageView, linkUrl: String) {
+        let url = AppConstants.domainImage + "w300" + linkUrl
+        imageView.kf.setImage(with: URL(string: url), placeholder: nil, options: [], progressBlock: nil, completionHandler: nil)
     }
 }

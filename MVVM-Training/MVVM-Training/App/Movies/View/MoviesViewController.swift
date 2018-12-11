@@ -37,13 +37,13 @@ final class MoviesViewController: BaseViewController {
         
         viewModel.loadMoviewSuccess?.subcribe(hdl: { [weak self](type: ListType) in
             guard let `self` = self else { return }
-            self.reloadTable(row: self.viewModel.getNumberRows() - 1)
+            self.tableView.reloadRows(at: [IndexPath(row: self.viewModel.getNumberRows() - 1, section: 0)], with: .fade)
         })
     }
     
     private func reloadTable(row: Int) {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
+        DispatchQueue.main.sync {
+            self.tableView.reloadRows(at: [IndexPath(row: row, section: 0)], with: .fade)
         }
     }
 }
@@ -57,9 +57,12 @@ extension MoviesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.className, for: indexPath) as? CustomCell,
-         let collection = viewModel.getObjectList(index: indexPath.row) else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.className, for: indexPath) as? CustomCell else {
             return UITableViewCell()
+        }
+        
+        guard let collection = viewModel.getObjectList(index: indexPath.row) else {
+            return cell
         }
         
         cell.configure(withViewModel: collection)
