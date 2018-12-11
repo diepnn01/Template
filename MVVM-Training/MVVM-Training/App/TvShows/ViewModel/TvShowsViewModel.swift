@@ -11,10 +11,35 @@ import CoreProject
 
 final class TvShowsViewModel {
 
+    private var tvShows = [MoviesCollection]()
     
-    
-    func getTvShow() {
+    var loadTvShowSuccess: DataBinding<ListType>?
+    init() {
+        loadTvShowSuccess = DataBinding()
+    }
+    func getTvShow(type: ListType) {
         
-//        MovieService.shared.getTvShows(type: .Popular).cloudError(<#T##closure: ((String, Int?) -> Void)?##((String, Int?) -> Void)?##(String, Int?) -> Void#>)
+        MovieService.shared.getTvShows(type: type).cloudResponse { [weak self](collection: MoviesCollection) in
+            guard let `self` = self else { return }
+            collection.itemType = type
+            self.tvShows.append(collection)
+            self.loadTvShowSuccess?.value = type
+            }.cloudError { (msg: String, _: Int?) in
+                // TODO: Hanlde case error
+            }.finally {
+                //
+        }
+    }
+    
+    func getObjectList(index: Int) -> MoviesCollection? {
+        guard !(index < 0 || index >= tvShows.count) else {
+            return nil
+        }
+        
+        return tvShows[index]
+    }
+    
+    func getNumberRows() -> Int {
+        return tvShows.count
     }
 }

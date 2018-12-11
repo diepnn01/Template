@@ -56,8 +56,15 @@ extension CustomCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemsCollectionViewCell.className, for: indexPath) as! ItemsCollectionViewCell
         let row = arrayItems?[indexPath.row]
-        cell.itemTitle.text = row?.title == "" ? row?.name : row?.title
-        ImageLoader.loadImage(imageView: cell.itemImage, linkUrl: row!.poster_path!)
+        cell.itemTitle.text = row?.title == nil ? row?.name : row?.title
+        
+        if let url = row?.poster_path {
+            ImageLoader.loadImage(imageView: cell.itemImage, linkUrl: url)
+            cell.itemImage.isHidden = false
+        } else {
+            cell.itemImage.isHidden = true
+        }
+        
         DispatchQueue.main.async {
             self.activityIndicator.stopAnimating()
         }
