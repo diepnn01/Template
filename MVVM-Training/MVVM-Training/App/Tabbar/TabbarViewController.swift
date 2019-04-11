@@ -8,13 +8,13 @@
 
 import UIKit
 
-final class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
+public class TabbarViewController: UITabBarController, UITabBarControllerDelegate {
 
     var storyBoard: UIStoryboard?
     var arrayVc: [UIViewController]?
     var itemController: TabbarItem!
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
         arrayVc = []
@@ -23,7 +23,7 @@ final class TabbarViewController: UITabBarController, UITabBarControllerDelegate
         viewControllers = arrayVc
     }
     
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    public func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         return true
     }
 }
@@ -32,7 +32,13 @@ private extension TabbarViewController{
     
     func setViewControllerForTabBarItem(itemType: TabBarItems)-> UIViewController {
         itemController =  TabbarItem(itemType: itemType)
-        itemController.controller.tabBarItem = UITabBarItem(title: itemType.rawValue, image: UIImage(named: itemController.imageDisabled )!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage(named:itemController.imageEnbled))
+        
+        let imageDisable = UIImage(named: itemController.imageDisabled )!.withRenderingMode(.alwaysOriginal)
+        
+        let imageEnable = UIImage(named:itemController.imageEnbled)?.withRenderingMode(.alwaysTemplate)
+        itemController.controller.tabBarItem.selectedImage.
+        
+        itemController.controller.tabBarItem = UITabBarItem(title: itemType.rawValue, image: imageDisable, selectedImage: )
         let viewController = UINavigationController(rootViewController: itemController.controller)
         return viewController
     }

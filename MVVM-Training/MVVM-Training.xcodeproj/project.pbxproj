@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F04656621C1247E0071F7A9 /* MoviesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F04656521C1247E0071F7A9 /* MoviesTest.swift */; };
 		5F3C553121B92BD200248FD9 /* TvShows.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3C553021B92BD200248FD9 /* TvShows.storyboard */; };
 		5F3C553321B92BE500248FD9 /* Movies.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3C553221B92BE500248FD9 /* Movies.storyboard */; };
 		5F3C553521B92BFC00248FD9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3C553421B92BFC00248FD9 /* BaseViewController.swift */; };
@@ -26,6 +27,9 @@
 		5F87076721BC03AE007C1B15 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87076621BC03AE007C1B15 /* UITableView+Extension.swift */; };
 		5F87076921BC03CF007C1B15 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87076821BC03CF007C1B15 /* UICollectionView+Extension.swift */; };
 		5F87076B21BC040F007C1B15 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87076A21BC040F007C1B15 /* NSObject+Extension.swift */; };
+		5F9EFA86224CD9E20033137C /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EFA85224CD9E20033137C /* UITableView.swift */; };
+		5FB836E521EE303C00BBB159 /* NewFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB836E421EE303C00BBB159 /* NewFeature.framework */; };
+		5FB836E621EE303C00BBB159 /* NewFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB836E421EE303C00BBB159 /* NewFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5FE7AB3121B7D53E00D99331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7AB3021B7D53E00D99331 /* AppDelegate.swift */; };
 		5FE7AB3321B7D53E00D99331 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE7AB3221B7D53E00D99331 /* InitialViewController.swift */; };
 		5FE7AB3621B7D53E00D99331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FE7AB3421B7D53E00D99331 /* Main.storyboard */; };
@@ -38,6 +42,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5FB836A221EDDCA000BBB159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB8369C21EDDCA000BBB159 /* SecondProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FB8366B21EDDA0F00BBB159;
+			remoteInfo = SecondProject;
+		};
+		5FB836A421EDDCA000BBB159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB8369C21EDDCA000BBB159 /* SecondProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FB8367F21EDDA0F00BBB159;
+			remoteInfo = SecondProjectTests;
+		};
+		5FB836A621EDDCA000BBB159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FB8369C21EDDCA000BBB159 /* SecondProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FB8368A21EDDA0F00BBB159;
+			remoteInfo = SecondProjectUITests;
+		};
 		5FE7AB4521B7D53F00D99331 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5FE7AB2521B7D53E00D99331 /* Project object */;
@@ -61,6 +86,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				5FB836E621EE303C00BBB159 /* NewFeature.framework in Embed Frameworks */,
 				5F3C55B021BA48C300248FD9 /* CoreProject.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -71,6 +97,7 @@
 /* Begin PBXFileReference section */
 		0B2429545044882D60F17B72 /* Pods-MVVM-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Training.release.xcconfig"; path = "Target Support Files/Pods-MVVM-Training/Pods-MVVM-Training.release.xcconfig"; sourceTree = "<group>"; };
 		5D0A5952211B655B85833890 /* Pods_MVVM_Training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F04656521C1247E0071F7A9 /* MoviesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTest.swift; sourceTree = "<group>"; };
 		5F3C553021B92BD200248FD9 /* TvShows.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TvShows.storyboard; sourceTree = "<group>"; };
 		5F3C553221B92BE500248FD9 /* Movies.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Movies.storyboard; sourceTree = "<group>"; };
 		5F3C553421B92BFC00248FD9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +116,9 @@
 		5F87076621BC03AE007C1B15 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		5F87076821BC03CF007C1B15 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		5F87076A21BC040F007C1B15 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		5F9EFA85224CD9E20033137C /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		5FB8369C21EDDCA000BBB159 /* SecondProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SecondProject.xcodeproj; path = ../SecondProject/SecondProject.xcodeproj; sourceTree = "<group>"; };
+		5FB836E421EE303C00BBB159 /* NewFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NewFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE7AB2D21B7D53E00D99331 /* MVVM-Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-Training.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FE7AB3021B7D53E00D99331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FE7AB3221B7D53E00D99331 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB836E521EE303C00BBB159 /* NewFeature.framework in Frameworks */,
 				87D94427B8EBA18FF6C752FD /* Pods_MVVM_Training.framework in Frameworks */,
 				5F3C55AF21BA48C300248FD9 /* CoreProject.framework in Frameworks */,
 			);
@@ -171,6 +202,7 @@
 				5F87076621BC03AE007C1B15 /* UITableView+Extension.swift */,
 				5F87076821BC03CF007C1B15 /* UICollectionView+Extension.swift */,
 				5F87076A21BC040F007C1B15 /* NSObject+Extension.swift */,
+				5F9EFA85224CD9E20033137C /* UITableView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -257,9 +289,20 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		5FB8369D21EDDCA000BBB159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FB836A321EDDCA000BBB159 /* SecondProject.app */,
+				5FB836A521EDDCA000BBB159 /* SecondProjectTests.xctest */,
+				5FB836A721EDDCA000BBB159 /* SecondProjectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5FE7AB2421B7D53E00D99331 = {
 			isa = PBXGroup;
 			children = (
+				5FB836E421EE303C00BBB159 /* NewFeature.framework */,
 				5F3C55AE21BA48C300248FD9 /* CoreProject.framework */,
 				5FE7AB2F21B7D53E00D99331 /* MVVM-Training */,
 				5FE7AB4721B7D53F00D99331 /* MVVM-TrainingTests */,
@@ -296,6 +339,7 @@
 			children = (
 				5FE7AB4821B7D53F00D99331 /* MVVM_TrainingTests.swift */,
 				5FE7AB4A21B7D53F00D99331 /* Info.plist */,
+				5F04656521C1247E0071F7A9 /* MoviesTest.swift */,
 			);
 			path = "MVVM-TrainingTests";
 			sourceTree = "<group>";
@@ -322,6 +366,7 @@
 		B1D917C10FCB51BA08B1C8E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FB8369C21EDDCA000BBB159 /* SecondProject.xcodeproj */,
 				5D0A5952211B655B85833890 /* Pods_MVVM_Training.framework */,
 			);
 			name = Frameworks;
@@ -420,6 +465,12 @@
 			mainGroup = 5FE7AB2421B7D53E00D99331;
 			productRefGroup = 5FE7AB2E21B7D53E00D99331 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5FB8369D21EDDCA000BBB159 /* Products */;
+					ProjectRef = 5FB8369C21EDDCA000BBB159 /* SecondProject.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5FE7AB2C21B7D53E00D99331 /* MVVM-Training */,
@@ -428,6 +479,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5FB836A321EDDCA000BBB159 /* SecondProject.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SecondProject.app;
+			remoteRef = 5FB836A221EDDCA000BBB159 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5FB836A521EDDCA000BBB159 /* SecondProjectTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SecondProjectTests.xctest;
+			remoteRef = 5FB836A421EDDCA000BBB159 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5FB836A721EDDCA000BBB159 /* SecondProjectUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SecondProjectUITests.xctest;
+			remoteRef = 5FB836A621EDDCA000BBB159 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		5FE7AB2B21B7D53E00D99331 /* Resources */ = {
@@ -530,6 +605,7 @@
 				5FE7AB3121B7D53E00D99331 /* AppDelegate.swift in Sources */,
 				5F3C554121B92CAB00248FD9 /* MoviesViewModel.swift in Sources */,
 				5F87076421BC0323007C1B15 /* CustomCell.swift in Sources */,
+				5F9EFA86224CD9E20033137C /* UITableView.swift in Sources */,
 				5F3C554721B9311B00248FD9 /* TabbarViewController.swift in Sources */,
 				5F87076721BC03AE007C1B15 /* UITableView+Extension.swift in Sources */,
 			);
@@ -539,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F04656621C1247E0071F7A9 /* MoviesTest.swift in Sources */,
 				5FE7AB4921B7D53F00D99331 /* MVVM_TrainingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

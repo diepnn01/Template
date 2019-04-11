@@ -18,6 +18,11 @@ target 'MVVM-Training' do
   project 'MVVM-Training/MVVM-Training.xcodeproj'
 end
 
+target 'NewFeature' do
+  common_pods
+  project 'NewFeature/NewFeature.xcodeproj'
+end
+
 target 'CoreProject' do
   common_pods
   project 'CoreProject/CoreProject.xcodeproj'

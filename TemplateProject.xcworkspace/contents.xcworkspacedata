@@ -8,6 +8,9 @@
       location = "group:MVVM-Training/MVVM-Training.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:NewFeature/NewFeature.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

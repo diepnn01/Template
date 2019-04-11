@@ -9,18 +9,21 @@
 import UIKit
 import CoreProject
 
-final class InitialViewController: UIViewController {
+public class InitialViewController: UIViewController {
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    override func viewDidAppear(_ animated: Bool) {
+    override public func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if let vc = UIStoryboard(name: "Tabbar", bundle: nil).instantiateViewController(withIdentifier: "TabbarViewController") as? TabbarViewController {
             UIApplication.shared.delegate?.window!!.rootViewController = vc
         }
+        
+        let vc = MoviesViewController()
     }
-
+    
+    
 }
 

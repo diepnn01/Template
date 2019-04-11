@@ -13,7 +13,7 @@ public final class MovieRouter: Router {
     
     func getMovies(type: ListType) -> URLRequestConvertible {
         let path = buildValidFullPathForRequest(getEndPoint(type: type, screenType: .Movie))
-        let params = ["api_key": "b42de0d7051793f886f6c0569505a420"]
+        let params = ["api_key": "b42de0d7051793f886f6c0569505a42012"]
         return buildUrlRequest(Route(method: .get, path: path, queryParams: params))
     }
     

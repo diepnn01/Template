@@ -1,17 +1,16 @@
 //
-//  MVVM_TrainingTests.swift
-//  MVVM-TrainingTests
+//  NewFeatureTests.swift
+//  NewFeatureTests
 //
-//  Created by Diep Nguyen on 12/5/18.
-//  Copyright © 2018 Diep Nguyen. All rights reserved.
+//  Created by Diep Nguyen on 1/15/19.
+//  Copyright © 2019 Diep Nguyen. All rights reserved.
 //
 
 import XCTest
-@testable import MVVM_Training
+@testable import NewFeature
 
-class MVVM_TrainingTests: XCTestCase {
+class NewFeatureTests: XCTestCase {
 
-    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
